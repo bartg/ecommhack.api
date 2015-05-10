@@ -1,0 +1,59 @@
+interactions:
+- request:
+    body: '{"url": "http://i.imgur.com/OFrzDjU.jpg"}'
+    headers:
+      Accept: [!!python/unicode 'application/json']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['41']
+      Content-Type: [!!python/unicode 'application/json']
+      Ocp-Apim-Subscription-Key: [!!python/unicode 'b93b9ef5a69b42e68a221041488db6c2']
+      User-Agent: [python-requests/2.5.1 CPython/2.7.6 Linux/3.13.0-39-generic]
+    method: POST
+    uri: https://api.projectoxford.ai/face/v0/detections?analyzesFaceLandmarks=True&analyzesGender=True&analyzesHeadPose=True&analyzesAge=True
+  response:
+    body: {string: !!python/unicode '[{"faceId":"3da8ceed-b852-409d-bcbe-85d90ea37993","faceRectangle":{"top":494,"left":259,"width":402,"height":402},"faceLandmarks":{"pupilLeft":{"x":364.9,"y":605.6},"pupilRight":{"x":547.3,"y":609.9},"noseTip":{"x":457.4,"y":701.7},"mouthLeft":{"x":377.9,"y":790.4},"mouthRight":{"x":551.2,"y":784.3},"eyebrowLeftOuter":{"x":288.3,"y":581.8},"eyebrowLeftInner":{"x":413.8,"y":575.2},"eyeLeftOuter":{"x":333.4,"y":611.6},"eyeLeftTop":{"x":365.8,"y":594.7},"eyeLeftBottom":{"x":363.5,"y":623.5},"eyeLeftInner":{"x":396.6,"y":613.8},"eyebrowRightInner":{"x":491.2,"y":577.2},"eyebrowRightOuter":{"x":623.1,"y":589.4},"eyeRightInner":{"x":516.5,"y":609.9},"eyeRightTop":{"x":548.2,"y":596.1},"eyeRightBottom":{"x":545.6,"y":623.6},"eyeRightOuter":{"x":574.8,"y":615.2},"noseRootLeft":{"x":436.9,"y":615.9},"noseRootRight":{"x":483.3,"y":615.1},"noseLeftAlarTop":{"x":419.1,"y":668.5},"noseRightAlarTop":{"x":497.3,"y":671.9},"noseLeftAlarOutTip":{"x":395.0,"y":709.8},"noseRightAlarOutTip":{"x":519.7,"y":706.4},"upperLipTop":{"x":464.4,"y":775.5},"upperLipBottom":{"x":464.1,"y":784.5},"underLipTop":{"x":466.3,"y":801.9},"underLipBottom":{"x":462.3,"y":819.9}},"attributes":{"headPose":{"pitch":0.0,"roll":-1.1,"yaw":0.1},"gender":"male","age":29}}]'}
+    headers:
+      cache-control: [no-cache]
+      content-length: ['1247']
+      content-type: [application/json; charset=utf-8]
+      date: ['Sat, 09 May 2015 15:31:30 GMT']
+      expires: ['-1']
+      pragma: [no-cache]
+      server: [Microsoft-HTTPAPI/2.0]
+      set-cookie: ['ai_session=28b5a09723664a9a988aa41f33b67e6f|2015-05-09T15:31:30.8536367+00:00|2015-05-09T15:31:31.2057618+00:00;
+          expires=Sat, 09-May-2015 16:01:31 GMT; path=/,ai_user=98b25e1c6c774003968682349f6a486e|2015-05-09T15:31:30.8536367+00:00;
+          expires=Fri, 31-Dec-9999 23:59:59 GMT; path=/']
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+    status: {code: 200, message: OK}
+- request:
+    body: '{"faceIds": ["3da8ceed-b852-409d-bcbe-85d90ea37993"], "maxNumOfCandidatesReturned":
+      1, "personGroupId": "ecomhack"}'
+    headers:
+      Accept: [!!python/unicode 'application/json']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['109']
+      Content-Type: [!!python/unicode 'application/json']
+      Ocp-Apim-Subscription-Key: [!!python/unicode 'b93b9ef5a69b42e68a221041488db6c2']
+      User-Agent: [python-requests/2.5.1 CPython/2.7.6 Linux/3.13.0-39-generic]
+    method: POST
+    uri: https://api.projectoxford.ai/face/v0/identifications
+  response:
+    body: {string: !!python/unicode '[{"faceId":"3da8ceed-b852-409d-bcbe-85d90ea37993","candidates":[{"personId":"8cc7e621-478f-4bc1-a3d1-161ec4710373","confidence":0.79095}]}]'}
+    headers:
+      cache-control: [no-cache]
+      content-length: ['139']
+      content-type: [application/json; charset=utf-8]
+      date: ['Sat, 09 May 2015 15:31:31 GMT']
+      expires: ['-1']
+      pragma: [no-cache]
+      server: [Microsoft-HTTPAPI/2.0]
+      set-cookie: ['ai_session=883de86b3e62480ea7e479f2f21461c5|2015-05-09T15:31:31.2938698+00:00|2015-05-09T15:31:31.5929574+00:00;
+          expires=Sat, 09-May-2015 16:01:31 GMT; path=/,ai_user=275eebe189c94f87a7bf6e7abc78b6d8|2015-05-09T15:31:31.2938698+00:00;
+          expires=Fri, 31-Dec-9999 23:59:59 GMT; path=/']
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+    status: {code: 200, message: OK}
+version: 1

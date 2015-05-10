@@ -1,0 +1,318 @@
+interactions:
+- request:
+    body: '{"faceIds": [], "name": "David Hasselhoff"}'
+    headers:
+      Accept: [!!python/unicode 'application/json']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['43']
+      Content-Type: [!!python/unicode 'application/json']
+      Ocp-Apim-Subscription-Key: [!!python/unicode 'b93b9ef5a69b42e68a221041488db6c2']
+      User-Agent: [python-requests/2.5.1 CPython/2.7.6 Linux/3.13.0-39-generic]
+    method: POST
+    uri: https://api.projectoxford.ai/face/v0/persongroups/ecomhack/persons
+  response:
+    body: {string: !!python/unicode '{"personId":"efbb7e95-6909-41cf-b179-eb6499c147d3"}'}
+    headers:
+      cache-control: [no-cache]
+      content-length: ['51']
+      content-type: [application/json; charset=utf-8]
+      date: ['Sat, 09 May 2015 17:58:40 GMT']
+      expires: ['-1']
+      pragma: [no-cache]
+      server: [Microsoft-HTTPAPI/2.0]
+      set-cookie: ['ai_session=a1de72b29b5b4b188aad6664941e4e20|2015-05-09T17:58:41.8320967+00:00|2015-05-09T17:58:41.8980341+00:00;
+          expires=Sat, 09-May-2015 18:28:41 GMT; path=/,ai_user=ba129fb76132406eb423bdb5380edbc5|2015-05-09T17:58:41.8320967+00:00;
+          expires=Fri, 31-Dec-9999 23:59:59 GMT; path=/']
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+    status: {code: 200, message: OK}
+- request:
+    body: '{"url": "http://faces.hern.as/static/images/david_hasselhoff_1.jpg"}'
+    headers:
+      Accept: [!!python/unicode 'application/json']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['68']
+      Content-Type: [!!python/unicode 'application/json']
+      Ocp-Apim-Subscription-Key: [!!python/unicode 'b93b9ef5a69b42e68a221041488db6c2']
+      User-Agent: [python-requests/2.5.1 CPython/2.7.6 Linux/3.13.0-39-generic]
+    method: POST
+    uri: https://api.projectoxford.ai/face/v0/detections?analyzesFaceLandmarks=True&analyzesGender=True&analyzesHeadPose=True&analyzesAge=True
+  response:
+    body: {string: !!python/unicode '[{"faceId":"c543b411-36fc-4bd3-aea1-9878c15e6e8b","faceRectangle":{"top":1145,"left":548,"width":1323,"height":1323},"faceLandmarks":{"pupilLeft":{"x":902.0,"y":1506.7},"pupilRight":{"x":1468.3,"y":1446.0},"noseTip":{"x":1180.3,"y":1904.9},"mouthLeft":{"x":1027.3,"y":2146.9},"mouthRight":{"x":1476.9,"y":2096.3},"eyebrowLeftOuter":{"x":624.1,"y":1493.2},"eyebrowLeftInner":{"x":1020.7,"y":1456.4},"eyeLeftOuter":{"x":787.7,"y":1532.4},"eyeLeftTop":{"x":897.4,"y":1477.8},"eyeLeftBottom":{"x":894.7,"y":1568.9},"eyeLeftInner":{"x":995.4,"y":1531.7},"eyebrowRightInner":{"x":1260.7,"y":1441.1},"eyebrowRightOuter":{"x":1734.1,"y":1382.8},"eyeRightInner":{"x":1360.8,"y":1493.8},"eyeRightTop":{"x":1465.3,"y":1422.3},"eyeRightBottom":{"x":1476.9,"y":1515.7},"eyeRightOuter":{"x":1570.7,"y":1451.1},"noseRootLeft":{"x":1093.8,"y":1566.3},"noseRootRight":{"x":1243.4,"y":1547.8},"noseLeftAlarTop":{"x":1082.2,"y":1791.5},"noseRightAlarTop":{"x":1302.3,"y":1781.5},"noseLeftAlarOutTip":{"x":1038.5,"y":1899.0},"noseRightAlarOutTip":{"x":1371.8,"y":1874.9},"upperLipTop":{"x":1240.0,"y":2105.0},"upperLipBottom":{"x":1242.9,"y":2150.4},"underLipTop":{"x":1237.0,"y":2157.2},"underLipBottom":{"x":1247.5,"y":2247.4}},"attributes":{"headPose":{"pitch":0.0,"roll":-5.7,"yaw":-3.5},"gender":"male","age":36}}]'}
+    headers:
+      cache-control: [no-cache]
+      content-length: ['1299']
+      content-type: [application/json; charset=utf-8]
+      date: ['Sat, 09 May 2015 17:58:44 GMT']
+      expires: ['-1']
+      pragma: [no-cache]
+      server: [Microsoft-HTTPAPI/2.0]
+      set-cookie: ['ai_session=3006bd8642894266a4fb36d3aee3e7f8|2015-05-09T17:58:43.4600542+00:00|2015-05-09T17:58:46.2217186+00:00;
+          expires=Sat, 09-May-2015 18:28:46 GMT; path=/,ai_user=dd384327922d4cebb97bad986d3d2e84|2015-05-09T17:58:43.4600542+00:00;
+          expires=Fri, 31-Dec-9999 23:59:59 GMT; path=/']
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [!!python/unicode 'application/json']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['0']
+      Content-Type: [!!python/unicode 'application/json']
+      Ocp-Apim-Subscription-Key: [!!python/unicode 'b93b9ef5a69b42e68a221041488db6c2']
+      User-Agent: [python-requests/2.5.1 CPython/2.7.6 Linux/3.13.0-39-generic]
+    method: PUT
+    uri: https://api.projectoxford.ai/face/v0/persongroups/ecomhack/persons/efbb7e95-6909-41cf-b179-eb6499c147d3/faces/c543b411-36fc-4bd3-aea1-9878c15e6e8b
+  response:
+    body: {string: !!python/unicode ''}
+    headers:
+      cache-control: [no-cache]
+      content-length: ['0']
+      date: ['Sat, 09 May 2015 17:58:45 GMT']
+      expires: ['-1']
+      pragma: [no-cache]
+      server: [Microsoft-HTTPAPI/2.0]
+      set-cookie: ['ai_session=5ff4073c1a0e40d4b269595f06559c1f|2015-05-09T17:58:46.1937905+00:00|2015-05-09T17:58:46.3042988+00:00;
+          expires=Sat, 09-May-2015 18:28:46 GMT; path=/,ai_user=5951c6ec26704954bceac2af2c9e07f9|2015-05-09T17:58:46.1937905+00:00;
+          expires=Fri, 31-Dec-9999 23:59:59 GMT; path=/']
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+    status: {code: 200, message: OK}
+- request:
+    body: '{"url": "http://faces.hern.as/static/images/david_hasselhoff_2.jpg"}'
+    headers:
+      Accept: [!!python/unicode 'application/json']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['68']
+      Content-Type: [!!python/unicode 'application/json']
+      Ocp-Apim-Subscription-Key: [!!python/unicode 'b93b9ef5a69b42e68a221041488db6c2']
+      User-Agent: [python-requests/2.5.1 CPython/2.7.6 Linux/3.13.0-39-generic]
+    method: POST
+    uri: https://api.projectoxford.ai/face/v0/detections?analyzesFaceLandmarks=True&analyzesGender=True&analyzesHeadPose=True&analyzesAge=True
+  response:
+    body: {string: !!python/unicode '[{"faceId":"cf1427b9-0f7b-4151-bdb1-d02e2269709e","faceRectangle":{"top":179,"left":422,"width":291,"height":291},"faceLandmarks":{"pupilLeft":{"x":502.6,"y":266.0},"pupilRight":{"x":630.3,"y":256.0},"noseTip":{"x":561.8,"y":347.6},"mouthLeft":{"x":495.1,"y":386.4},"mouthRight":{"x":644.1,"y":379.4},"eyebrowLeftOuter":{"x":444.2,"y":261.4},"eyebrowLeftInner":{"x":536.2,"y":245.0},"eyeLeftOuter":{"x":484.2,"y":267.4},"eyeLeftTop":{"x":503.9,"y":258.6},"eyeLeftBottom":{"x":500.7,"y":273.8},"eyeLeftInner":{"x":521.3,"y":270.0},"eyebrowRightInner":{"x":593.5,"y":240.3},"eyebrowRightOuter":{"x":681.9,"y":242.9},"eyeRightInner":{"x":611.4,"y":262.3},"eyeRightTop":{"x":628.4,"y":250.8},"eyeRightBottom":{"x":630.6,"y":265.4},"eyeRightOuter":{"x":648.1,"y":256.5},"noseRootLeft":{"x":548.0,"y":274.9},"noseRootRight":{"x":580.6,"y":273.6},"noseLeftAlarTop":{"x":540.6,"y":324.1},"noseRightAlarTop":{"x":595.2,"y":322.2},"noseLeftAlarOutTip":{"x":522.5,"y":342.2},"noseRightAlarOutTip":{"x":611.0,"y":345.1},"upperLipTop":{"x":568.2,"y":381.0},"upperLipBottom":{"x":568.4,"y":390.6},"underLipTop":{"x":568.2,"y":418.6},"underLipBottom":{"x":566.7,"y":434.9}},"attributes":{"headPose":{"pitch":0.0,"roll":-2.3,"yaw":-3.9},"gender":"male","age":30}}]'}
+    headers:
+      cache-control: [no-cache]
+      content-length: ['1248']
+      content-type: [application/json; charset=utf-8]
+      date: ['Sat, 09 May 2015 17:58:47 GMT']
+      expires: ['-1']
+      pragma: [no-cache]
+      server: [Microsoft-HTTPAPI/2.0]
+      set-cookie: ['ai_session=095fce5784674e4a919efd9608bc0ab8|2015-05-09T17:58:47.8654095+00:00|2015-05-09T17:58:49.1386933+00:00;
+          expires=Sat, 09-May-2015 18:28:49 GMT; path=/,ai_user=5acc57436361404989e57b1cf8060779|2015-05-09T17:58:47.8654095+00:00;
+          expires=Fri, 31-Dec-9999 23:59:59 GMT; path=/']
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [!!python/unicode 'application/json']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['0']
+      Content-Type: [!!python/unicode 'application/json']
+      Ocp-Apim-Subscription-Key: [!!python/unicode 'b93b9ef5a69b42e68a221041488db6c2']
+      User-Agent: [python-requests/2.5.1 CPython/2.7.6 Linux/3.13.0-39-generic]
+    method: PUT
+    uri: https://api.projectoxford.ai/face/v0/persongroups/ecomhack/persons/efbb7e95-6909-41cf-b179-eb6499c147d3/faces/cf1427b9-0f7b-4151-bdb1-d02e2269709e
+  response:
+    body: {string: !!python/unicode ''}
+    headers:
+      cache-control: [no-cache]
+      content-length: ['0']
+      date: ['Sat, 09 May 2015 17:58:48 GMT']
+      expires: ['-1']
+      pragma: [no-cache]
+      server: [Microsoft-HTTPAPI/2.0]
+      set-cookie: ['ai_session=d051a704199443598db848c0d91be7cb|2015-05-09T17:58:49.1009296+00:00|2015-05-09T17:58:49.1479579+00:00;
+          expires=Sat, 09-May-2015 18:28:49 GMT; path=/,ai_user=497f85fae38748c492d198d405dc6c99|2015-05-09T17:58:49.1009296+00:00;
+          expires=Fri, 31-Dec-9999 23:59:59 GMT; path=/']
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+    status: {code: 200, message: OK}
+- request:
+    body: '{"url": "http://faces.hern.as/static/images/david_hasselhoff_3.jpg"}'
+    headers:
+      Accept: [!!python/unicode 'application/json']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['68']
+      Content-Type: [!!python/unicode 'application/json']
+      Ocp-Apim-Subscription-Key: [!!python/unicode 'b93b9ef5a69b42e68a221041488db6c2']
+      User-Agent: [python-requests/2.5.1 CPython/2.7.6 Linux/3.13.0-39-generic]
+    method: POST
+    uri: https://api.projectoxford.ai/face/v0/detections?analyzesFaceLandmarks=True&analyzesGender=True&analyzesHeadPose=True&analyzesAge=True
+  response:
+    body: {string: !!python/unicode '[{"faceId":"9ef2de99-fff2-450e-9760-4b2ff5d1140d","faceRectangle":{"top":380,"left":207,"width":289,"height":289},"faceLandmarks":{"pupilLeft":{"x":278.2,"y":457.5},"pupilRight":{"x":407.3,"y":453.0},"noseTip":{"x":358.2,"y":561.2},"mouthLeft":{"x":292.2,"y":584.8},"mouthRight":{"x":422.6,"y":577.9},"eyebrowLeftOuter":{"x":222.1,"y":439.8},"eyebrowLeftInner":{"x":325.3,"y":453.4},"eyeLeftOuter":{"x":260.6,"y":460.5},"eyeLeftTop":{"x":284.3,"y":451.3},"eyeLeftBottom":{"x":281.5,"y":472.1},"eyeLeftInner":{"x":302.9,"y":463.5},"eyebrowRightInner":{"x":383.0,"y":450.9},"eyebrowRightOuter":{"x":473.3,"y":438.9},"eyeRightInner":{"x":389.2,"y":461.6},"eyeRightTop":{"x":413.3,"y":443.5},"eyeRightBottom":{"x":415.3,"y":467.6},"eyeRightOuter":{"x":440.5,"y":452.3},"noseRootLeft":{"x":332.1,"y":468.7},"noseRootRight":{"x":373.7,"y":468.8},"noseLeftAlarTop":{"x":324.5,"y":528.6},"noseRightAlarTop":{"x":381.6,"y":529.1},"noseLeftAlarOutTip":{"x":310.8,"y":552.4},"noseRightAlarOutTip":{"x":403.3,"y":545.3},"upperLipTop":{"x":356.8,"y":584.2},"upperLipBottom":{"x":357.5,"y":595.8},"underLipTop":{"x":361.7,"y":619.8},"underLipBottom":{"x":363.8,"y":642.0}},"attributes":{"headPose":{"pitch":0.0,"roll":-2.9,"yaw":2.6},"gender":"male","age":38}}]'}
+    headers:
+      cache-control: [no-cache]
+      content-length: ['1247']
+      content-type: [application/json; charset=utf-8]
+      date: ['Sat, 09 May 2015 17:58:50 GMT']
+      expires: ['-1']
+      pragma: [no-cache]
+      server: [Microsoft-HTTPAPI/2.0]
+      set-cookie: ['ai_session=3e8e2af020ba487b96b74db5ed39bf17|2015-05-09T17:58:50.6965843+00:00|2015-05-09T17:58:51.8808279+00:00;
+          expires=Sat, 09-May-2015 18:28:51 GMT; path=/,ai_user=0d85499cd1e043418664ede1863eec2b|2015-05-09T17:58:50.6965843+00:00;
+          expires=Fri, 31-Dec-9999 23:59:59 GMT; path=/']
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [!!python/unicode 'application/json']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['0']
+      Content-Type: [!!python/unicode 'application/json']
+      Ocp-Apim-Subscription-Key: [!!python/unicode 'b93b9ef5a69b42e68a221041488db6c2']
+      User-Agent: [python-requests/2.5.1 CPython/2.7.6 Linux/3.13.0-39-generic]
+    method: PUT
+    uri: https://api.projectoxford.ai/face/v0/persongroups/ecomhack/persons/efbb7e95-6909-41cf-b179-eb6499c147d3/faces/9ef2de99-fff2-450e-9760-4b2ff5d1140d
+  response:
+    body: {string: !!python/unicode ''}
+    headers:
+      cache-control: [no-cache]
+      content-length: ['0']
+      date: ['Sat, 09 May 2015 17:58:51 GMT']
+      expires: ['-1']
+      pragma: [no-cache]
+      server: [Microsoft-HTTPAPI/2.0]
+      set-cookie: ['ai_session=4d57466e8cc14ff0b6c62ae54112557f|2015-05-09T17:58:51.7582406+00:00|2015-05-09T17:58:51.7917912+00:00;
+          expires=Sat, 09-May-2015 18:28:51 GMT; path=/,ai_user=5ff58659fa654ebca0da9d202b643542|2015-05-09T17:58:51.7582406+00:00;
+          expires=Fri, 31-Dec-9999 23:59:59 GMT; path=/']
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [!!python/unicode 'application/json']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['0']
+      Content-Type: [!!python/unicode 'application/json']
+      Ocp-Apim-Subscription-Key: [!!python/unicode 'b93b9ef5a69b42e68a221041488db6c2']
+      User-Agent: [python-requests/2.5.1 CPython/2.7.6 Linux/3.13.0-39-generic]
+    method: POST
+    uri: https://api.projectoxford.ai/face/v0/persongroups/ecomhack/training
+  response:
+    body: {string: !!python/unicode '{"status":"running","startTime":"5/9/2015 5:58:52
+        PM","endTime":null}'}
+    headers:
+      cache-control: [no-cache]
+      content-length: ['69']
+      content-type: [application/json; charset=utf-8]
+      date: ['Sat, 09 May 2015 17:58:52 GMT']
+      expires: ['-1']
+      location: ['http://oxford-face-v1.cloudapp.net:8080/persongroups/ecomhack/training']
+      pragma: [no-cache]
+      server: [Microsoft-HTTPAPI/2.0]
+      set-cookie: ['ai_session=48d94a9b84384adb97db4532babc037f|2015-05-09T17:58:52.5089442+00:00|2015-05-09T17:58:52.6506057+00:00;
+          expires=Sat, 09-May-2015 18:28:52 GMT; path=/,ai_user=6d6e67bb312e4280b79bc5d45f6029dc|2015-05-09T17:58:52.5089442+00:00;
+          expires=Fri, 31-Dec-9999 23:59:59 GMT; path=/']
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+    status: {code: 201, message: Created}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.5.1 CPython/2.7.6 Linux/3.13.0-44-generic]
+    method: GET
+    uri: http://graph.facebook.com//picture?width=500&height=500
+  response:
+    body: {string: !!python/unicode ''}
+    headers:
+      access-control-allow-origin: ['*']
+      cache-control: ['private, no-cache, no-store, must-revalidate']
+      connection: [keep-alive]
+      content-length: ['0']
+      content-type: [image/jpeg]
+      date: ['Sat, 09 May 2015 21:00:34 GMT']
+      expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
+      facebook-api-version: [v1.0]
+      location: ['https://fbstatic-a.akamaihd.net/rsrc.php/v2/yA/r/gPCjrIGykBe.gif']
+      pragma: [no-cache]
+      x-fb-debug: [1oKkduG3A1Q3y27xFmWMvL2m+YqHh3vdXZTI67fomFUzvLo+L9nEa1qsKRgaLghO6BuWoru62w4QW2Us7tjeUw==]
+      x-fb-rev: ['1728037']
+    status: {code: 302, message: Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.5.1 CPython/2.7.6 Linux/3.13.0-44-generic]
+    method: GET
+    uri: https://fbstatic-a.akamaihd.net/rsrc.php/v2/yA/r/gPCjrIGykBe.gif
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA9WR+z+TCwPAn+fZxWzDxiaF0yy5J7ocOqFnYqjk0oVuJuUS1VlSSZ16jLFQB5kU
+        sVznlplLI7S5X3PPksuIVK6dVOd0Oq/3c97/4v3+8P3+AV8nF6b1rtOtwC3gHQAIhcL5+fm8vLyP
+        Hz8WFhYODw+LxeKxsbGOjg65XF5TUyOVSl+/ft3e3l5XVyeRSEZGRl6+fPnmzZuWlpbBwcHOzs7R
+        0dGBgYGGhobi4uLJycnx8fHp6elXr15NTEy8ePHi7du3z549a2trq6qqam1tLSoqGhoa6urqkslk
+        /f39ZWVl1dXV9fX1lZWVjY2NfX19CoWiqanp6dOnIpGovLy8u7u7ubl5amqqtrb2/fv3ubm5vb29
+        c3NzPT09FRUVHz58KC0tnZmZKSkpmZ2dzc/PLygoWFhYWFxcXFpaAv4f0PsL/b+a/at/nwBKa4gz
+        JyqaGxPLuxMXn3D33u+JScn3U/ipD9IePkrPeJyZJXiSnZObl18gLEx2Kil9WiYqdyqqrBKKJTUl
+        1XX1mbXS8oamZr6srbSlsyuhvb27rz/qZe/Aq6ahiqGRscJaHYztTtWZWbONBKohZgOzlLkk4j4f
+        /9Iq/kTTJWuY2Tk4oHFDDHcaTN/E9iVdYtgD4Z/uvU4PN9Jy2LTBxyztkihH+jsWjDET+9mDWus2
+        e+YGkX0QbUNiWMZ60oxT0o74BFgEZnfyx83sZmAITqLvCBylJK4q+umAwerqQ0KQrS8TIpIYAOKR
+        62obQ/ybYoJgjLYyw/x3GpnzMGs64Vu0qy8Oip3AaJ5AM7OueiBURuBIgYmca1lXD5/8xk6Agteg
+        mBi1TC4GWG/4826rZS/R3axOyUpisLgj5RNDi5GK8xvxAUk0d3rUInFz7a3q+V+W7wyEBD7xSZ2H
+        VMSx/hVC9ydANLrvCSuoTyEL6dvVddDC9ddwy5OYs3SreDo3lmaDJQKqHvOIjo7qqjRy/Nwf+LF6
+        jeKTyJX3mK067L03QNE1j0jpBV+GmhZy1dtnc5rvo1vVOKwbNN0T7U3Wk8CyiJBLc/tYpQg7krDF
+        5k8KgA1yP36NMuE3BepZVMkPbdpBA03pAW/3QcOF4UPQVvy6nAQ+RsFZu/tVlxqlZOeZI4PsNWUI
+        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
+    headers:
+      access-control-allow-origin: ['*']
+      cache-control: ['public, max-age=12591472']
+      connection: [keep-alive]
+      content-encoding: [gzip]
+      content-length: ['2263']
+      content-md5: [VihRI6ltUPAcz5nOpFf2IA==]
+      content-type: [image/gif]
+      date: ['Sat, 09 May 2015 21:00:34 GMT']
+      expires: ['Fri, 02 Oct 2015 14:38:26 GMT']
+      last-modified: ['Mon, 01 Jan 2001 08:00:00 GMT']
+      timing-allow-origin: ['*']
+      vary: [Accept-Encoding]
+      x-content-type-options: [nosniff]
+      x-fb-debug: [fYeE5Kt7Xak8GKWjtppOi4Y4ZZ9m+IqdYRISDjHLPNv0cGH6TPnfemW/96SvDa0yIMvZRvPw15yl02OhHpDW6A==]
+    status: {code: 200, message: OK}
+version: 1
